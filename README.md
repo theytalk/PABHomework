@@ -11,7 +11,9 @@ Mobile Application Development (Pengembangan Aplikasi Bergerak) — SIF502, Odd 
 
 | Module | Homework | Description |
 |---|---|---|
-| `:hw05` | Homework 5 | Functional & Idiomatic Kotlin (`task1/hw1.kt` … `task5/hw5.kt`) |
+| `:hw02` | Homework 2 | Kotlin Programming Essentials (`task1` … `task5`) |
+| `:hw03` | Homework 3 | OOP in Kotlin & Null Safety (`task1` … `task5`) |
+| `:hw05` | Homework 5 | Functional & Idiomatic Kotlin (`task1` … `task5`) |
 | `:app` | Homework 6 | Android Studio and Your First Jetpack Compose App (`MyFirstScreen`) |
 
 ---
