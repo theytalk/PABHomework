@@ -11,7 +11,7 @@ val students = listOf(
 )
 
 fun main() {
-    // 1. filter: students with score >= 70
+
     val passing = students.filter { it.score >= 70 }
     println("Students dengan score>= 70: ${passing.size}")
 

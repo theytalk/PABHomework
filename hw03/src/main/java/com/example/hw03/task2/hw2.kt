@@ -15,7 +15,7 @@ open class SmartDevice(val name: String) {
 }
 
 class SmartTvDevice(name: String) : SmartDevice(name) {
-    // Bonus (+5 points): Custom setter enforcing 0..100 with private set
+
     var speakerVolume: Int = 5
         private set(value) {
             if (value in 0..100) {
@@ -49,7 +49,4 @@ fun main() {
     tv.nextChannel()
     tv.increaseVolume()
     tv.turnOff()
-
-    // Bonus check: Demonstrating private set encapsulation
-    // tv.speakerVolume = 50 // Compilation error: Cannot assign to 'speakerVolume': the setter is private
 }

@@ -1,6 +1,5 @@
 package com.example.hw03.task5
 
-// Abstract base class
 abstract class SmartDevice(val name: String) {
     abstract fun turnOn()
 
@@ -9,7 +8,6 @@ abstract class SmartDevice(val name: String) {
     }
 }
 
-// Interfaces
 interface Connectable {
     fun connect()
 }
@@ -18,9 +16,7 @@ interface Rechargeable {
     fun charge()
 }
 
-// Concrete class implementing multiple interfaces and inheritance
 class SmartWatch(name: String) : SmartDevice(name), Connectable, Rechargeable {
-    // Private battery property clamped strictly between 0 and 100
     private var battery: Int = 50
         set(value) {
             field = when {
@@ -57,12 +53,10 @@ fun main() {
     watch.turnOn()
     watch.connect()
 
-    // Charge three times to demonstrate battery clamping at 100%
     watch.charge()
     watch.charge()
     watch.charge()
 
-    // Show owner before and after setting
     watch.showOwner()
     watch.ownerName = "Rani"
     watch.showOwner()

@@ -1,6 +1,5 @@
 package com.example.hw03.task1
 
-// Parent class
 open class SmartDevice(val name: String) {
     var status: String = "off"
 
@@ -15,7 +14,6 @@ open class SmartDevice(val name: String) {
     }
 }
 
-// Child class representing a smart light
 class SmartLightDevice(name: String) : SmartDevice(name) {
     var brightness: Int = 50
 

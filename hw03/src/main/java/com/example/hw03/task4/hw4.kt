@@ -6,7 +6,6 @@ fun showInfo(data: Any) {
     when (data) {
         is String -> println(data.length)
         is Int -> println(data * 2)
-        // Extra branch: Smart cast for SmartDevice
         is SmartDevice -> println(data.name)
         else -> println("Unknown")
     }
